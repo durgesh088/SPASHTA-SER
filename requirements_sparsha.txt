@@ -1,0 +1,13 @@
+torch
+torchaudio
+librosa
+numpy
+matplotlib
+scikit-learn
+joblib
+streamlit
+sounddevice
+scipy
+shap
+seaborn
+lime

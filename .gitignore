@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments & Virtual Envs
+.venv/
+venv/
+ENV/
+env/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Model Checkpoints & Pre-extracted Data Caches (Host on Google Drive)
+*.pt
+*.pkl
+*.zip
+
+# Local PDF Reports & Generators (Kept on local disk only)
+*.pdf
+generate_report_pdf.py
+presentation/
+report/
+report_rahul/
+
+# Experimental Artifacts, Plots & CSV Outputs (Not for GitHub)
+results/
+plots/
+outputs/
+same_output/
+misclassified_output/
+*.webp
+*.png
+*.jpg
+*.jpeg
+*.wav
+*.mp3
+
+# Scratch directory
+scratch/
