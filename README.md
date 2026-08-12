@@ -92,7 +92,7 @@ Available modes in the web dashboard:
 
 ### 🔬 Running Research & Benchmarking Scripts
 
-To reproduce the experimental results presented in the paper:
+To reproduce the experimental results:
 
 ```bash
 # 1. Comparative XAI Benchmark (SPASHTA vs. LIME vs. SHAP)
