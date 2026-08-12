@@ -106,9 +106,6 @@ python validate_spashta_models.py
 
 # 4. Threshold Sensitivity Grid Search (Window size and tau optimization)
 python spashta_threshold_analysis.py
-
-# 5. Generate Results PDF Summary Report
-python generate_report_pdf.py
 ```
 
 ---
