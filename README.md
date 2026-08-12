@@ -4,17 +4,6 @@ This repository contains the official implementation of **SPASHTA**, a model-agn
 
 ---
 
-## Key Features
-
-* **Model-Agnostic Explainability**: Works seamlessly across 1D feature vectors, 2D sequential matrices, and 3D log-mel spectrogram tensors.
-* **Real-Time GPU Batching**: Vectorizes temporal masking into parallel PyTorch GPU tensors, generating explanations in **~0.3s–0.6s per sample** (up to $4.7\times$ faster than SHAP).
-* **Listenable Explanations**: Mutes non-expressive speech frames below an optimal threshold ($\tau = 0.6$) to output reconstructed audio snippets ($y_{\text{salient}}$).
-* **Multi-Architecture Support**: Pre-trained checkpoints included for **CNN-BiGRU-Attention**, **Hybrid 1D-CNN-BiLSTM**, and **SE-ResNet-BiGRU-Attention**.
-* **Interactive Web Application**: Streamlit dashboard for real-time `.wav` uploads, live microphone recording, and batch dataset evaluation.
-* **Empirical Benchmarking Suite**: Quantitative evaluation tools for execution latency, memory footprint, explanation fidelity (Gain, Drop), and noise stability (Cosine & Pearson correlation).
-
----
-
 ## Repository Structure
 
 ```
