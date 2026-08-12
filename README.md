@@ -1,6 +1,6 @@
 # SPASHTA: Speech Posthoc Attribution with Salient Highlighting for Transparent Analysis
 
-This repository contains the official implementation of **SPASHTA**, a model-agnostic posthoc explainability framework for Speech Emotion Recognition (SER). SPASHTA estimates frame-wise acoustic attribution by measuring prediction confidence degradation under localized temporal sliding-window perturbations. It reconstructs the most expressive, salient audio segments into a listenable waveform ($y_{\text{salient}}$), rendering explanations directly inspectable by human listeners and domain experts.
+This repository contains the implementation of **SPASHTA**, a model-agnostic posthoc explainability framework for Speech Emotion Recognition (SER). SPASHTA estimates frame-wise acoustic attribution by measuring prediction confidence degradation under localized temporal sliding-window perturbations. It reconstructs the most expressive, salient audio segments into a listenable waveform ($y_{\text{salient}}$), rendering explanations directly inspectable by human listeners and domain experts.
 
 ---
 
@@ -107,16 +107,6 @@ python validate_spashta_models.py
 # 4. Threshold Sensitivity Grid Search (Window size and tau optimization)
 python spashta_threshold_analysis.py
 ```
-
----
-
-## Model Architectures & Preprocessing
-
-| Architecture | Input Dimensions | Feature Type | Preprocessing Filters |
-| :--- | :--- | :--- | :--- |
-| **CNN-BiGRU-Attention** | $1 \times 374$ | Pooled MFCCs, Mel, Chroma, Pitch, Energy | Standard Scaling |
-| **Hybrid 1D-CNN-BiLSTM** | $161 \times 125$ | Sequential Mel Spectrogram Matrices | Kalman $\rightarrow$ NLMS $\rightarrow$ Wiener Filter Cascade |
-| **SE-ResNet-BiGRU-Attention** | $3 \times 64 \times 501$ | Log-Mel + 1st Order Delta + 2nd Order Delta | Spectrogram Channel-wise Scaler |
 
 ---
 
